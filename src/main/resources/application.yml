@@ -1,0 +1,10 @@
+spring:
+  banner:
+    location: classpath:myBanner.txt
+util:
+  about:
+    author: htG
+    info: Educational application
+    version: 1.0
+  random-int: "${random.int}"
+  random-uuid: "${random.uuid}"
