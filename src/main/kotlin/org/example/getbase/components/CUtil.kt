@@ -2,6 +2,7 @@ package org.example.getbase.components
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.context.annotation.Configuration
+import javax.annotation.PostConstruct
 
 @Configuration
 @ConfigurationProperties(prefix = "util")
@@ -15,21 +16,22 @@ class CUtil() {
     lateinit var about: Map<String, String>
     lateinit var randomInt: String
     lateinit var randomUUID: String
+    lateinit var test: String
 
     constructor(
         about: Map<String, String>,
         randomInt: String,
         randomUUID: String,
+        test: String,
     ) : this() {
         this.about = about
         this.randomInt = randomInt
         this.randomUUID = randomUUID
+        this.test = test
     }
 
-     /*@PostConstruct
+    /*@PostConstruct
     fun getStoreConfiguration() {
-        symbols.forEach {
-            println("${it.key} - ${it.value}")
-        }
+        println(test)
     }*/
 }

@@ -24,5 +24,7 @@ class HttpUtilController(
         append("${util.randomInt}\n")
         append("randomUUID:\n")
         append("${util.randomUUID}")
+        append("test:\n")
+        append("${util.test}")
     }.toString()
 }

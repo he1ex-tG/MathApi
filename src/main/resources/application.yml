@@ -1,3 +1,4 @@
+#debug: true
 spring:
   banner:
     location: classpath:myBanner.txt
@@ -8,3 +9,4 @@ util:
     version: 1.0
   random-int: "${random.int}"
   random-uuid: "${random.uuid}"
+  test: one
