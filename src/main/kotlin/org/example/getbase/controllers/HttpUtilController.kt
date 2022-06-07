@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class HttpUtilController(
-    private val util: CUtil
+    private val util: CUtil,
 ) : CReflectionUsage() {
 
     @GetMapping("/util")

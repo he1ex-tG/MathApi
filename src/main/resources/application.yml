@@ -2,6 +2,12 @@
 spring:
   banner:
     location: classpath:myBanner.txt
+  kafka:
+    consumer:
+      bootstrap-servers: "localhost:9092"
+      group-id: "someGroup"
+    producer:
+      bootstrap-servers: "localhost:9092"
 util:
   about:
     author: htG
